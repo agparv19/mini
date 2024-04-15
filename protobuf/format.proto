@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message data {
+    message entry {
+        string value = 1;
+        int64 expiry = 2; 
+    }
+    map<string, entry> map = 1;
+}
